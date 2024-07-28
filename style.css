@@ -23,7 +23,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 8rem;
+  padding: 2rem 5%;
 }
 
 .logo {
@@ -113,15 +113,18 @@ header {
 }
 
 .social-icons {
-  display: flex;
-  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
   padding: 0.8rem;
-  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .social-icons i {
   display: block;
-  margin: 0 10px;
+  margin: 25px 0;
   color: #1e1e24;
   font-size: 1.5rem;
   transition: all 0.6s;
@@ -153,7 +156,7 @@ header {
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 1rem 2rem;
+      padding: 1rem 5%;
   }
 
   .home-img {
@@ -191,8 +194,13 @@ header {
   }
 
   .social-icons {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      flex-direction: row;
       justify-content: center;
-      margin-top: 0.5rem; /* Adjust space between buttons and social icons */
+      margin-top: 1rem; /* Add space between buttons and social icons */
   }
 
   .social-icons i {
@@ -206,7 +214,6 @@ header {
       margin-top: 1rem;
   }
 }
-
 
 .cd__intro{
   padding: 60px 30px;
